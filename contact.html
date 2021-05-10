@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIST college indore-institute/Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a> </li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSE</a></li>
+                    <li> <a href="blog.html">BLOG</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!---------------location---------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.65698987149!2d75.77919941510808!3d22.629280636590277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f939228d75dd%3A0xcf9efd7925de48cc!2sIndore%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1620579390086!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Rau - Pithampur Rd, Opposite Indian Institute of Management</h5>
+                        <p>Indore, Madhya Pradesh 453331</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>1800 103 3069</h5>
+                        <p>Monday to Saturday,10AM TO 6PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                    <h5>indoreinstituteofrs@gmail.com</h5>
+                    <p>Email us for query</p>
+                </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <P>Indore Institute of Science &Technology (IIST) established in the year 2003, is amongst the Top 5 Engineering Colleges of Indore. <br> The Institute is approved by AICTE, New Delhi and affiliated to RGPV Bhopal offering Bachelor’s degree in CS,
+            IT, EC, Civil, Chemical and Mechanical Engineering and Master’s Degree in CS, Machine Design and Digital Communication</P>
+        <div class="icons">
+            <a href="www.facebook.com/IISTcollegeindore/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/school/indore-institute/"><i class="fa fa-linkedin"></i></a>
+            <i class="fa fa-instagram"></i>
+
+            <i class="fa fa-github"></i>
+
+        </div>
+    </section>
+    <!--------javascript--------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
